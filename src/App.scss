@@ -1,3 +1,13 @@
+@use "./assets/sass/_variables.scss" as *;
+@import "./assets/sass/reset";
+
+*{
+  background-color: $colour-white;
+  color: $colour-black;
+  font-family: $font-main;
+}
+
 .app {
+  margin: 1rem 1.5rem;
   text-align: center;
 }
