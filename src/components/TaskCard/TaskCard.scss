@@ -1,0 +1,27 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.task-card{
+    margin: 1rem 0;
+    height: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 0.125rem solid $colour-black;
+    border-radius: 0.35rem;
+
+    &__checkbox{
+        width: 15%;
+    }
+
+    &__text{
+        width: 70%;
+        text-align: left;
+    }
+
+    &__bin{
+        height: 40%;
+        width: 15%;
+    }
+}
