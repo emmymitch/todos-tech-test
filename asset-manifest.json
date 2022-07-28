@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/todos-tech-test/static/css/main.5277818a.css",
+    "main.css": "/todos-tech-test/static/css/main.f411ccd0.css",
     "main.js": "/todos-tech-test/static/js/main.47fef3ca.js",
     "static/js/787.ceb63087.chunk.js": "/todos-tech-test/static/js/787.ceb63087.chunk.js",
     "static/media/bin-icon.svg": "/todos-tech-test/static/media/bin-icon.86f8f0b56545f081dcac23393f68d103.svg",
     "static/media/plus-circle-icon.svg": "/todos-tech-test/static/media/plus-circle-icon.5fb575b877ddee12299ed96c5e1b65d5.svg",
     "index.html": "/todos-tech-test/index.html",
-    "main.5277818a.css.map": "/todos-tech-test/static/css/main.5277818a.css.map",
+    "main.f411ccd0.css.map": "/todos-tech-test/static/css/main.f411ccd0.css.map",
     "main.47fef3ca.js.map": "/todos-tech-test/static/js/main.47fef3ca.js.map",
     "787.ceb63087.chunk.js.map": "/todos-tech-test/static/js/787.ceb63087.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5277818a.css",
+    "static/css/main.f411ccd0.css",
     "static/js/main.47fef3ca.js"
   ]
 }
