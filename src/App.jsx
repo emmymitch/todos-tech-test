@@ -4,16 +4,41 @@ import Header from './components/Header/Header';
 import TaskBar from './components/TaskBar/TaskBar';
 import TaskCard from './components/TaskCard/TaskCard';
 
+let taskList = [];
+
 const App = () => {
   const [tasks, setTasks] = useState([]);
 
-  const addTask = () => {
-    tasks.push(<TaskCard taskText="Task Text" />);
-    setTasks([...tasks]);
+  const deleteTask = (event) => {
+    const taskId = event.target.parentElement.id;
+
+    for (let i=0; i<taskList.length; i++){
+      if (taskList[i].key === taskId){
+        taskList.splice(i, 1);
+      }
+    }
+
+    setTasks([...taskList]);
+  };
+
+  const addTask = (event) => {
+    const taskText = event.target.previousSibling.value;
+
+    if (taskText){
+      taskList.push(<TaskCard key={taskText} taskText={taskText} deleteTask={deleteTask} />);
+
+      setTasks([...taskList]);
+      event.target.previousSibling.value = "";
+
+    //If no input in textbox
+    } else{
+      alert("Please enter a todo");
+    }
   }
 
   const resetTasks = () => {
-    setTasks([]);
+    taskList = [];
+    setTasks([...taskList]);
   }
 
   return (
