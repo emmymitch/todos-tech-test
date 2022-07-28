@@ -5,6 +5,10 @@
     justify-content: space-between;
     align-items: center;
 
+    &__title{
+        font-weight: 700;
+    }
+
     &__reset{
         padding: 0.5rem;
 
