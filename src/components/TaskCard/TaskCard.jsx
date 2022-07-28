@@ -29,7 +29,7 @@ const TaskCard = ({taskText, deleteTask}) => {
 
     
     return (
-        <div key={taskText} className="task-card">
+        <div id={taskText} className="task-card">
             <div onClick={taskStateChange} className={"task-card__success-click "+(taskState? "strikethrough" : "")}>
                 <input name="check" className="task-card__checkbox" type="checkbox" />
                 <label htmlFor="check" className="task-card__text">{taskText}</label>
