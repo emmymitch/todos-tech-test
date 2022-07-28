@@ -1,0 +1,27 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.taskbar{
+    margin: 1rem 0;
+    height: 2.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 0.125rem solid $colour-black;
+    border-radius: 0.35rem;
+
+    &__input{
+        padding: 0.5rem;
+        height: 100%;
+        width: 75%;
+
+        border: none;
+        border-radius: inherit;
+    }
+
+    &__img{
+        margin: 0 0.5rem;
+        height: 50%;
+    }
+}
