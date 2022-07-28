@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.scss';
 import Header from './components/Header/Header';
 import TaskBar from './components/TaskBar/TaskBar';
