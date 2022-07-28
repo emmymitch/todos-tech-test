@@ -10,6 +10,7 @@ const App = () => {
   const [tasks, setTasks] = useState([]);
 
   const deleteTask = (event) => {
+    //Get id of task container div
     const taskId = event.target.parentElement.id;
 
     for (let i=0; i<taskList.length; i++){
@@ -41,12 +42,13 @@ const App = () => {
     setTasks([...taskList]);
   }
 
+
   return (
     <div className="app">
       <Header resetTasks={resetTasks} />
       <TaskBar addTask={addTask} />
 
-      {tasks.length !== 0 
+      {tasks.length !== 0
         ? tasks
         : <p className='no-cards-text'>Nothing to see here yet... Add a task in the field above! ☝</p>
       }
